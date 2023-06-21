@@ -1,0 +1,73 @@
+.faq_section
+    padding-top: 30px
+    width: 100%
+    min-height: 500px
+    background-color: #f8f9fa
+
+    .heading
+        font-size: 2rem
+        color: #78708d
+        font-weight: 800
+        text-align: center
+
+    .sub_heading
+        font-size: 1.2rem
+        color: #78708d
+        font-weight: 500
+        text-align: center
+        margin-top: 10px
+        font-style: italic
+        span
+            font-weight: bold
+            background: linear-gradient(270.1deg, #38AEF0 7.72%, #585DDC 95.52%)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+
+    .main_con
+        margin-top: 30px
+        display: flex
+        column-gap: 30px
+        .image
+            max-width: 400px
+            display: grid
+            place-items: center
+
+    .faqs
+        width: 100%
+        display: flex
+        flex-direction: column
+        row-gap: 15px
+        justify-content: center
+    .faq
+        position: relative
+        width: 100%
+        background: white
+        overflow: hidden
+        .faq_question
+            position: relative
+            width: 100%
+            display: flex
+            color: #78708d
+            font-weight: bold
+            align-items: center
+            padding-right: 40px
+            cursor: pointer
+
+        .faq_answer
+            display: none
+        .icon_toggler
+            position: absolute
+            // background: red
+            right: 10px
+
+        &.expanded
+            .faq_question
+                background: #e6e9ef
+                color: #525158
+                .icon_toggler
+                    transform: rotate(180deg)
+            .faq_answer
+                // background: blue
+                width: 100%
+                display: block
+                color: #525158

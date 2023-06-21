@@ -1,0 +1,180 @@
+.landing_page
+    // background-image:
+    background: linear-gradient(360deg, #11052C 0%, #32254E 100%)
+    min-height: 100vh
+    position: relative
+    z-index: 1
+    &::before
+        position: absolute
+        content: ''
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        z-index: -1
+
+.top_intro_section
+    .top_stripe
+        font-family: 'Poppins', sans-serif
+        color: white
+        text-align: center
+        font-weight: bold
+        background: linear-gradient(90deg, #FB9C58 -3.94%, #FB555F 103.95%)
+        border-radius: 8px
+        font-size: 0.9rem
+    .info_heading
+        color: white
+        font-size: 2.2rem
+        text-align: center
+        font-weight: 800
+        margin-bottom: 0.5rem
+        font-family: 'Poppins', sans-serif
+        span
+            background: linear-gradient(270.1deg, #38AEF0 7.72%, #585DDC 95.52%)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+    .info_tagline
+        color: white
+        text-align: center
+        font-size: 1.4rem
+        font-style: italic
+        font-weight: 500
+        text-decoration: underline
+
+    .event
+        flex-wrap: wrap
+        justify-content: space-between
+        a.video
+            img
+                max-width: 500px
+                border-radius: 8px
+
+        .event_info
+            color: white
+            background: #11052C
+            width: 100%
+            min-width: 450px
+            height: 100%
+            border-radius: 8px
+            .comp
+                font-size: 1.2rem
+                font-weight: 500
+                background: white
+                border-radius: 8px
+                color: #525158
+                width: 100%
+                padding: 8px
+                display: flex
+                column-gap: 10px
+                align-items: center
+                svg
+                    fill: #585DDC
+                    transform: scale(1.1)
+
+    .join_text
+        color: white
+        font-size: 1.8rem
+        font-weight: 800
+        text-align: center
+        margin-top: 1rem
+
+    .money_back
+        text-align: center
+        color: #38AEF0
+        font-weight: 400
+        text-decoration: underline
+        font-size: 1.2rem
+
+    .announcement
+        margin-top: 20px
+        font-size: 1.8rem
+        font-weight: 500
+        color: white
+        text-align: center
+        svg
+            height: 30px
+            margin-right: 10px
+            width: 30px
+        span
+            background: linear-gradient(270.1deg, #38AEF0 7.72%, #585DDC 95.52%)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            font-weight: 700
+
+.main_btn_con
+    cursor: pointer
+    &:hover
+        animation: none
+    &:hover .main_btn
+        transform: scale(.8)
+
+.main_btn
+    transform: scale(.7)
+    width: 100%
+    // border: 10px solid white
+    padding: 15px
+    text-align: center
+    background: linear-gradient(90deg, #FB9C58 -3.94%, #FB555F 103.95%)
+    border-radius: 12px
+    margin-top: 10px
+    cursor: pointer
+    transition: all 0.3s ease-in-out
+    animation: backgroundChange 2s ease-in-out infinite
+    background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706)
+    background-size: 600% 100%
+    animation: gradient 4s linear infinite
+    animation-direction: alternate
+
+    &:hover
+        transform: scale(.8)
+    .heading
+        color: white
+        text-transform: uppercase
+        font-weight: 800
+        font-size: 2rem
+        span
+            text-decoration: line-through
+            font-weight: normal
+
+    .desc
+        text-transform: uppercase
+        color: white
+        // font-weight: 500
+        font-size: 2rem
+        // font-style: italic
+        margin-top: -10px
+
+    @keyframes gradient
+        0%
+            background-position: 0%
+        100%
+            background-position: 100%
+
+.countdown
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    margin-top: 10px
+    .countdown_item
+        display: flex
+        flex-direction: column
+        text-align: center
+        font-weight: bold
+        span
+            height: 50px
+            padding: 0 10px
+            width: 80px
+            display: grid
+            place-items: center
+            font-weight: bold
+            font-size: 2rem
+            border-radius: 8px
+            background: #585DDC
+            
+
+
+// style for small screen
+@media only screen and (max-width: 768px)
+    .landing_page
+
+  
